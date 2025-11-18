@@ -1,0 +1,150 @@
+'Log files:
+/Users/mortonmabumbo/Downloads/testiminony-web1_10-main/.npm-cache/_logs/2025-11-06T17_49_14_934Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: @tiptap/extension-text-align@2.26.3
+Found: @tiptap/core@3.7.2
+node_modules/@tiptap/core
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-blockquote@3.7.2
+  node_modules/@tiptap/extension-blockquote
+    @tiptap/extension-blockquote@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-bold@3.7.2
+  node_modules/@tiptap/extension-bold
+    @tiptap/extension-bold@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-bubble-menu@3.7.2
+  node_modules/@tiptap/extension-bubble-menu
+    optional @tiptap/extension-bubble-menu@"^3.7.2" from @tiptap/react@3.7.2
+    node_modules/@tiptap/react
+      @tiptap/react@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-code@3.7.2
+  node_modules/@tiptap/extension-code
+    @tiptap/extension-code@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-code-block@3.7.2
+  node_modules/@tiptap/extension-code-block
+    @tiptap/extension-code-block@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-document@3.7.2
+  node_modules/@tiptap/extension-document
+    @tiptap/extension-document@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-floating-menu@3.7.2
+  node_modules/@tiptap/extension-floating-menu
+    optional @tiptap/extension-floating-menu@"^3.7.2" from @tiptap/react@3.7.2
+    node_modules/@tiptap/react
+      @tiptap/react@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-hard-break@3.7.2
+  node_modules/@tiptap/extension-hard-break
+    @tiptap/extension-hard-break@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-heading@3.7.2
+  node_modules/@tiptap/extension-heading
+    @tiptap/extension-heading@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-horizontal-rule@3.7.2
+  node_modules/@tiptap/extension-horizontal-rule
+    @tiptap/extension-horizontal-rule@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-italic@3.7.2
+  node_modules/@tiptap/extension-italic
+    @tiptap/extension-italic@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-link@3.7.2
+  node_modules/@tiptap/extension-link
+    @tiptap/extension-link@"^3.7.2" from the root project
+    @tiptap/extension-link@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-list@3.7.2
+  node_modules/@tiptap/extension-list
+    peer @tiptap/extension-list@"^3.7.2" from @tiptap/extension-bullet-list@3.7.2
+    node_modules/@tiptap/extension-bullet-list
+      @tiptap/extension-bullet-list@"^3.7.2" from @tiptap/starter-kit@3.7.2
+      node_modules/@tiptap/starter-kit
+        @tiptap/starter-kit@"^3.7.2" from the root project
+    peer @tiptap/extension-list@"^3.7.2" from @tiptap/extension-list-item@3.7.2
+    node_modules/@tiptap/extension-list-item
+      @tiptap/extension-list-item@"^3.7.2" from @tiptap/starter-kit@3.7.2
+      node_modules/@tiptap/starter-kit
+        @tiptap/starter-kit@"^3.7.2" from the root project
+    peer @tiptap/extension-list@"^3.7.2" from @tiptap/extension-list-keymap@3.7.2
+    node_modules/@tiptap/extension-list-keymap
+      @tiptap/extension-list-keymap@"^3.7.2" from @tiptap/starter-kit@3.7.2
+      node_modules/@tiptap/starter-kit
+        @tiptap/starter-kit@"^3.7.2" from the root project
+    peer @tiptap/extension-list@"^3.7.2" from @tiptap/extension-ordered-list@3.7.2
+    node_modules/@tiptap/extension-ordered-list
+      @tiptap/extension-ordered-list@"^3.7.2" from @tiptap/starter-kit@3.7.2
+      node_modules/@tiptap/starter-kit
+        @tiptap/starter-kit@"^3.7.2" from the root project
+    @tiptap/extension-list@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-paragraph@3.7.2
+  node_modules/@tiptap/extension-paragraph
+    @tiptap/extension-paragraph@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-strike@3.7.2
+  node_modules/@tiptap/extension-strike
+    @tiptap/extension-strike@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-text@3.7.2
+  node_modules/@tiptap/extension-text
+    @tiptap/extension-text@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extensions@3.7.2
+  node_modules/@tiptap/extensions
+    peer @tiptap/extensions@"^3.7.2" from @tiptap/extension-dropcursor@3.7.2
+    node_modules/@tiptap/extension-dropcursor
+      @tiptap/extension-dropcursor@"^3.7.2" from @tiptap/starter-kit@3.7.2
+      node_modules/@tiptap/starter-kit
+        @tiptap/starter-kit@"^3.7.2" from the root project
+    peer @tiptap/extensions@"^3.7.2" from @tiptap/extension-gapcursor@3.7.2
+    node_modules/@tiptap/extension-gapcursor
+      @tiptap/extension-gapcursor@"^3.7.2" from @tiptap/starter-kit@3.7.2
+      node_modules/@tiptap/starter-kit
+        @tiptap/starter-kit@"^3.7.2" from the root project
+    @tiptap/extensions@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/react@3.7.2
+  node_modules/@tiptap/react
+    @tiptap/react@"^3.7.2" from the root project
+  @tiptap/core@"^3.7.2" from @tiptap/starter-kit@3.7.2
+  node_modules/@tiptap/starter-kit
+    @tiptap/starter-kit@"^3.7.2" from the root project
+  peer @tiptap/core@"^3.7.2" from @tiptap/extension-underline@3.7.2
+  node_modules/@tiptap/starter-kit/node_modules/@tiptap/extension-underline
+    @tiptap/extension-underline@"^3.7.2" from @tiptap/starter-kit@3.7.2
+    node_modules/@tiptap/starter-kit
+      @tiptap/starter-kit@"^3.7.2" from the root project
+
+Could not resolve dependency:
+peer @tiptap/core@"^2.7.0" from @tiptap/extension-text-align@2.26.3
+node_modules/@tiptap/extension-text-align
+  @tiptap/extension-text-align@"^2.26.3" from the root project
+
+Conflicting peer dependency: @tiptap/core@2.27.1
+node_modules/@tiptap/core
+  peer @tiptap/core@"^2.7.0" from @tiptap/extension-text-align@2.26.3
+  node_modules/@tiptap/extension-text-align
+    @tiptap/extension-text-align@"^2.26.3" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
