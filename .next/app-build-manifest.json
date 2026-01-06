@@ -16,11 +16,6 @@
       "static/chunks/main-app.js",
       "static/chunks/app/login/page.js"
     ],
-    "/api/backend/[...path]/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/backend/[...path]/route.js"
-    ],
     "/api/audit/[...path]/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -31,30 +26,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/recordings/[id]/loading": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/recordings/[id]/loading.js"
-    ],
-    "/recordings/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/recordings/[id]/page.js"
-    ],
-    "/recordings/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/recordings/page.js"
-    ],
     "/transcripts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/transcripts/page.js"
-    ],
-    "/settings/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/settings/page.js"
     ]
   }
 }

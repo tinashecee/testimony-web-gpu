@@ -89,8 +89,8 @@ export function TranscriptReport({
   const [recordings, setRecordings] = useState<Recording[]>([]);
   const [recordingsLoading, setRecordingsLoading] = useState(false);
   const [transcriptionAssignments, setTranscriptionAssignments] = useState<
-    any[]
-  >([]);
+    Map<number, any[]>
+  >(new Map());
   const [sortBy, setSortBy] = useState<keyof RecordingTranscriptData>("date");
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [selectedRecording, setSelectedRecording] =
@@ -182,30 +182,7 @@ export function TranscriptReport({
       }
     };
 
-    const loadTranscriptionAssignments = async () => {
-      try {
-        console.log("Loading transcription assignments...");
-        const response = await fetch("/api/backend/transcription_users", {
-          method: "GET",
-        });
-
-        if (response.ok) {
-          const assignments = await response.json();
-          console.log("Transcription assignments loaded:", assignments);
-          setTranscriptionAssignments(assignments);
-        } else {
-          console.warn(
-            "Failed to load transcription assignments:",
-            response.status
-          );
-        }
-      } catch (error) {
-        console.warn("Error loading transcription assignments:", error);
-      }
-    };
-
     loadRecordings();
-    loadTranscriptionAssignments();
   }, [
     user?.role,
     (user as any)?.district,
@@ -216,6 +193,34 @@ export function TranscriptReport({
     searchTerm,
     courtFilter,
   ]);
+
+  // Load assignments for each recording individually
+  useEffect(() => {
+    const loadAssignmentsForRecordings = async () => {
+      if (recordings.length === 0) return;
+      
+      const { transcriptionApi } = await import("@/services/api");
+      const assignmentsMap = new Map<number, any[]>();
+      
+      // Fetch assignments for each recording
+      const assignmentPromises = recordings.map(async (recording) => {
+        try {
+          const assignments = await transcriptionApi.getAssignmentsByCase(recording.id);
+          if (assignments && assignments.length > 0) {
+            assignmentsMap.set(recording.id, assignments);
+          }
+        } catch (error) {
+          console.warn(`Failed to load assignments for recording ${recording.id}:`, error);
+          // If 404, that's fine - just means no assignments
+        }
+      });
+      
+      await Promise.all(assignmentPromises);
+      setTranscriptionAssignments(assignmentsMap);
+    };
+    
+    loadAssignmentsForRecordings();
+  }, [recordings]);
 
   // Process transcript data
   const transcriptData = useMemo(() => {
@@ -243,10 +248,9 @@ export function TranscriptReport({
           | "none";
       }
 
-      // Find assigned user from transcription assignments
-      const assignment = transcriptionAssignments.find(
-        (assignment) => assignment.case_id === recording.id
-      );
+      // Get assigned user from transcription assignments map
+      const assignments = transcriptionAssignments.get(recording.id);
+      const assignment = assignments && assignments.length > 0 ? assignments[0] : null;
       const assignedTo = assignment ? assignment.user_name : "Unassigned";
 
       return {
@@ -542,9 +546,8 @@ export function TranscriptReport({
               | "none";
           }
 
-          const assignment = transcriptionAssignments.find(
-            (assignment) => assignment.case_id === updatedRecording.id
-          );
+          const assignments = transcriptionAssignments.get(updatedRecording.id);
+          const assignment = assignments && assignments.length > 0 ? assignments[0] : null;
           const assignedTo = assignment ? assignment.user_name : "Unassigned";
 
           setSelectedRecording({

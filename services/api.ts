@@ -2,7 +2,7 @@ import { cacheService, CACHE_KEYS } from "./cacheService";
 
 // Use Next.js API proxy to avoid CORS issues
 // The proxy forwards to: https://testimonyapi.soxfort.com (production) or http://142.93.56.4:5000 (development)
-const API_BASE_URL = "/api/backend";
+const API_BASE_URL = "http://41.220.20.218:5000";
 
 // Configuration for API requests
 const API_CONFIG = {

@@ -1,9 +1,6 @@
 {
-  "/api/backend/[...path]/route": "app/api/backend/[...path]/route.js",
   "/api/audit/[...path]/route": "app/api/audit/[...path]/route.js",
+  "/login/page": "app/login/page.js",
   "/page": "app/page.js",
-  "/recordings/[id]/page": "app/recordings/[id]/page.js",
-  "/recordings/page": "app/recordings/page.js",
-  "/transcripts/page": "app/transcripts/page.js",
-  "/settings/page": "app/settings/page.js"
+  "/transcripts/page": "app/transcripts/page.js"
 }
